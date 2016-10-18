@@ -3,6 +3,20 @@ package ba.edu.ibu.oop.week3;
 import java.io.IOException;
 import java.util.Scanner;
 
+/*
+1. Write a simple calculator. Show a menu of operations to the user. Then get two numbers and calculate the result
+	- Example Run:
+		1. Addition
+		2. Subtraction
+		3. Multiplication
+		4. Division
+		5. Modulus
+		Your Selection: 1
+		Enter first number: 4
+		Enter second number: 8
+	# Result=4+8=12
+ */
+
 public class Calculator {
 	public static void main(String[] args) throws IOException {
 		int choice = 0;
@@ -86,9 +100,9 @@ public class Calculator {
 	}
 
 	/*
-	 * This method is used to clear screen.
-	 * It just prints 50 new lines. 
+	 * This method is used to clear screen. It just prints 50 new lines.
 	 */
+
 	public static void clearScreen() {
 		for (int i = 0; i < 50; i++)
 			System.out.println("");

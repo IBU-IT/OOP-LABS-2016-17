@@ -1,5 +1,12 @@
 package ba.edu.ibu.oop.week2;
 
+/*
+4. Get two numbers and find if the first number is divisible by the second one.
+	- Example run:
+		Enter first number: 6
+		Enter second number: 4
+		6 is not divisible by 4
+*/
 
 public class DivisableConsole {
 

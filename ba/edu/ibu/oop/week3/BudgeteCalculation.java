@@ -2,6 +2,24 @@ package ba.edu.ibu.oop.week3;
 
 import java.util.Scanner;
 
+/*
+6. Calculate the monthly budget of a family, classify the family according to the net income, calculate the average income per person if there is no deficit. For the budget consider the followings:
+	Income:
+		a. Ask the salary of the father
+		b. Ask the salary of the mother
+		c. Ask if there is another income
+	Expenses:
+		a. Ask for the rental 
+		b. Ask for bills(electricity, water, etc.)
+		c. Ask for kitchen expenses.
+		d. Ask for the other expenses.(education,health,etc.)
+	
+	Classification
+		If  net income is <= 530 YTL this family is a poor family
+		If net income is  >530 and <=1500 YTL this family is a middle-class family
+		If net income is  >1500 this family is a rich family
+ */
+
 public class BudgeteCalculation {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
