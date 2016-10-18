@@ -12,7 +12,6 @@ public class FamilyAverageAge {
 
 		System.out.print("Please enter number of people in your family: ");
 
-		// try-catch
 		familySize = scanner.nextInt();
 
 		for (int i = 1; i <= familySize; i++) {

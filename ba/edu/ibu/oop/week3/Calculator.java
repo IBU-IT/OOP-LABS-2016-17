@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Calculator {
 	public static void main(String[] args) throws IOException {
 		int choice = 0;
-		int first_number = 0;
-		int second_number = 0;
+		int firstNumber = 0;
+		int secondNumber = 0;
 		float result = 0;
 
 		System.out
@@ -19,18 +19,18 @@ public class Calculator {
 		choice = scanner.nextInt();
 
 		if (choice == 6) {
-			clear_screen();
+			clearScreen();
 			System.exit(0);
 		}
 
 		try {
 			System.out.println("Please enter first number: ");
-			first_number = scanner.nextInt();
+			firstNumber = scanner.nextInt();
 
 			System.out.println("Please enter second number: ");
-			second_number = scanner.nextInt();
+			secondNumber = scanner.nextInt();
 		} catch (Exception e) {
-			clear_screen();
+			clearScreen();
 			System.out
 					.println("These operation can be done only on numbers. Plese try again");
 			System.exit(0);
@@ -38,33 +38,33 @@ public class Calculator {
 
 		switch (choice) {
 		case 1:
-			result = first_number + second_number;
-			System.out.println("Result: " + first_number + "+" + second_number
+			result = firstNumber + secondNumber;
+			System.out.println("Result: " + firstNumber + "+" + secondNumber
 					+ "=" + result);
 			break;
 		case 2:
-			result = first_number - second_number;
-			System.out.println("Result: " + first_number + "-" + second_number
+			result = firstNumber - secondNumber;
+			System.out.println("Result: " + firstNumber + "-" + secondNumber
 					+ "=" + result);
 			break;
 		case 3:
-			result = first_number * second_number;
-			System.out.println("Result: " + first_number + "*" + second_number
+			result = firstNumber * secondNumber;
+			System.out.println("Result: " + firstNumber + "*" + secondNumber
 					+ "=" + result);
 			break;
 		case 4:
-			if (second_number == 0)
+			if (secondNumber == 0)
 				System.out
 						.println("You cannot divide by zero. Plese try again.");
 			else {
-				result = first_number / second_number;
-				System.out.println("Result: " + first_number + "/"
-						+ second_number + "=" + result);
+				result = firstNumber / secondNumber;
+				System.out.println("Result: " + firstNumber + "/"
+						+ secondNumber + "=" + result);
 			}
 			break;
 		case 5:
-			result = first_number % second_number;
-			System.out.println("Result: " + first_number + "%" + second_number
+			result = firstNumber % secondNumber;
+			System.out.println("Result: " + firstNumber + "%" + secondNumber
 					+ "=" + result);
 			break;
 		default:
@@ -76,16 +76,20 @@ public class Calculator {
 		choice = 0;
 		choice = scanner.nextInt();
 		if (choice == 1) {
-			clear_screen();
+			clearScreen();
 		} else {
-			clear_screen();
+			clearScreen();
 			scanner.close();
 			System.exit(0);
 		}
 
 	}
 
-	public static void clear_screen() {
+	/*
+	 * This method is used to clear screen.
+	 * It just prints 50 new lines. 
+	 */
+	public static void clearScreen() {
 		for (int i = 0; i < 50; i++)
 			System.out.println("");
 	}

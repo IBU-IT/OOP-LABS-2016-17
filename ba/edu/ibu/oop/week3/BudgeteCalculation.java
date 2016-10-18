@@ -11,12 +11,12 @@ public class BudgeteCalculation {
 
 		while (true) {
 			
-			System.out.println("Would you like to do budget calculation, (Y)es/(N)o: ");
+			System.out.println("\nWould you like to do budget calculation, (Y)es/(N)o: ");
 			choice = scanner.nextLine();
 			
 			if (choice.equals("y") || choice.equals("Y")) {
 				
-				clear_screen();
+				clearScreen();
 				System.out.print("Enter the income of your father (KM): ");
 				totalIncome += scanner.nextInt();
 				System.out.print("Enter the income of your mather (KM): ");
@@ -46,7 +46,7 @@ public class BudgeteCalculation {
 				else
 					System.out.println("You are rich family.");
 			} else if (choice.equals("n") || choice.equals("N")) {
-				clear_screen();
+				clearScreen();
 				System.out.println("Byee..");
 				if (!scanner.hasNextLine())
 					scanner.close();
@@ -55,7 +55,11 @@ public class BudgeteCalculation {
 		}
 	}
 
-	public static void clear_screen() {
+	/*
+	 * This method is used to clear screen.
+	 * It just prints 50 new lines. 
+	 */
+	public static void clearScreen() {
 		for (int i = 0; i < 50; i++)
 			System.out.println("");
 	}

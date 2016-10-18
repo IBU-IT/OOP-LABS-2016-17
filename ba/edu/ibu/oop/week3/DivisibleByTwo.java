@@ -8,8 +8,6 @@ public class DivisibleByTwo {
 		int number = 0;
 		Scanner scanner = new Scanner(System.in);
 
-		//Can be done by pushing numbers that are divisible by 2 in List
-
 		for (int i = 0; i < 10; i++) {
 			System.out.print("Please enter a number: ");
 			number = scanner.nextInt();
