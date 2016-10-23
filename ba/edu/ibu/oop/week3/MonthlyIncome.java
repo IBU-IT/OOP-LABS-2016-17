@@ -2,6 +2,13 @@ package ba.edu.ibu.oop.week3;
 
 import java.util.Scanner;
 
+/*
+2. Get the monthly income of three families and categorize them as follows:
+	- Example Run:
+		What is your monthly income: 500
+		This family is VERY POOR!
+ */
+
 public class MonthlyIncome {
 	public static void main(String[] args) {
 		int income = 0;

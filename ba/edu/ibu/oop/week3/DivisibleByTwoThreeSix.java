@@ -2,6 +2,26 @@ package ba.edu.ibu.oop.week3;
 
 import java.util.Scanner;
 
+/*
+4. Get ten numbers from the user and count the numbers that are divisible by 2, 3, 6 and none of them. Do not test the numbers by 6 instead use the idea that if a number is divible by 2 and 3 then it is divisible by 6.
+	- Example Run:
+		Enter a number: 1
+		Enter a number: 24
+		Enter a number: 36
+		Enter a number: 40
+		Enter a number: 15
+		Enter a number: 17
+		Enter a number: 19
+		Enter a number: 14
+		Enter a number: 13
+		Enter a number: 32
+		5 numbers are divisible by 2.
+		3 numbers are divisible by 3.
+		2 numbers are divisible by 6.
+		
+	# 4 numbers are not divisible by any of them.
+ */
+
 public class DivisibleByTwoThreeSix {
 	public static void main(String[] args) {
 		int number = 0;
