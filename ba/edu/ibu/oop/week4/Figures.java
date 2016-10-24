@@ -2,6 +2,20 @@ package ba.edu.ibu.oop.week4;
 
 import java.util.Scanner;
 
+/*
+
+
+ 6. We want to print different figures. The user selects the figure type and you will 
+    print a figure accordingly until the user wants to quit.
+
+	 1. Rectangle	 2. Diamond    		3. Pyramid
+	 ---------			  *					 *
+	 |		|		    * * *		   		* *
+	 |		|		  * * * * *	      	   * * *
+	 |		|		  * * * * *			  * * * *
+	 |		|		    * * *			 * * * * *
+	 ---------		   	  *				* * * * * *
+ */
 public class Figures {
 
 	public int height;
@@ -14,7 +28,7 @@ public class Figures {
 		int choice;
 		do {
 			System.out
-					.println("Select figure you want to draw:\n1. Rectangle\n2. Diamond\n3. Piramide\n4. Exit");
+					.println("Select figure you want to draw:\n1. Rectangle\n2. Diamond\n3. Pyramid\n4. Exit");
 			choice = scanner.nextInt();
 
 			switch (choice) {
@@ -28,6 +42,7 @@ public class Figures {
 			case 2:
 				System.out.println("Please enter diagonale for diamond: ");
 				figure.base = scanner.nextInt();
+				figure.drawDiamond(figure);
 				break;
 			case 3:
 				System.out.println("Please enter base for triangle: ");
@@ -61,23 +76,35 @@ public class Figures {
 	}
 
 	public void drawDiamond(Figures figure) {
-
+		for (int i = 1; i <= figure.base; i++) {
+			for (int j = figure.base; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int m = 1; m <= i; m++) {
+				System.out.print(" *");
+			}
+			System.out.println();
+		}
+		for (int i = 1; i <= figure.base; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print(" ");
+			}
+			for (int m = figure.base; m >= i; m--) {
+				System.out.print(" *");
+			}
+			System.out.println();
+		}
 	}
 
 	public void drawTriangle(Figures figure) {
-		int c = 1;
 		for (int i = 1; i <= figure.base; i++) {
-			for (int j = i; j <= figure.base; j++) {
+			for (int j = figure.base; j >= i; j--) {
 				System.out.print(" ");
 			}
-			for (int k = 1; k <= c; k++) {
-				if (k % 2 == 0)
-					System.out.print(" ");
-				else
-					System.out.print("*");
+			for (int m = 1; m <= i; m++) {
+				System.out.print(" *");
 			}
 			System.out.println();
-			c += 2;
 		}
 	}
 }
