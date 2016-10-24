@@ -3,8 +3,6 @@ package ba.edu.ibu.oop.week4;
 import java.util.Scanner;
 
 /*
-
-
  6. We want to print different figures. The user selects the figure type and you will 
     print a figure accordingly until the user wants to quit.
 
@@ -16,14 +14,14 @@ import java.util.Scanner;
 	 |		|		    * * *			 * * * * *
 	 ---------		   	  *				* * * * * *
  */
-public class Figures {
+public class Problem6 {
 
 	public int height;
 	public int width;
 	public int base;
 
 	public static void main(String[] args) {
-		Figures figure = new Figures();
+		Problem6 figure = new Problem6();
 		Scanner scanner = new Scanner(System.in);
 		int choice;
 		do {
@@ -61,7 +59,7 @@ public class Figures {
 		} while (true);
 	}
 
-	public void drawRectangle(Figures figure) {
+	public void drawRectangle(Problem6 figure) {
 		for (int i = 1; i <= figure.height; i++) {
 			for (int j = 1; j <= figure.width; j++) {
 				if (i == 1 || i == figure.height)
@@ -75,7 +73,7 @@ public class Figures {
 		}
 	}
 
-	public void drawDiamond(Figures figure) {
+	public void drawDiamond(Problem6 figure) {
 		for (int i = 1; i <= figure.base; i++) {
 			for (int j = figure.base; j >= i; j--) {
 				System.out.print(" ");
@@ -96,7 +94,7 @@ public class Figures {
 		}
 	}
 
-	public void drawTriangle(Figures figure) {
+	public void drawTriangle(Problem6 figure) {
 		for (int i = 1; i <= figure.base; i++) {
 			for (int j = figure.base; j >= i; j--) {
 				System.out.print(" ");

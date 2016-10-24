@@ -10,7 +10,7 @@ import java.util.Scanner;
 	 Enter the number to be reversed: 423
 	 Reverse of 423 is 324
  */
-public class ReverseNumber {
+public class Problem4 {
 	public static void main(String[] args) {
 		int number, enteredNumber, reverse = 0;
 		Scanner scanner = new Scanner(System.in);
