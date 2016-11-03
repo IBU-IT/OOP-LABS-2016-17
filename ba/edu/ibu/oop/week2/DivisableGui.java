@@ -1,6 +1,8 @@
 package ba.edu.ibu.oop.week2;
 
 
+import java.awt.Component;
+
 import javax.swing.JOptionPane;
 
 /*
@@ -14,8 +16,12 @@ import javax.swing.JOptionPane;
 public class DivisableGui {
 
 	public static void main(String[] args) {
-		int number1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter first integer number : "));
-		int number2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter second integer number : "));
+		divisable(null);
+	}
+	
+	public static void divisable(Component c){
+		int number1 = Integer.parseInt(JOptionPane.showInputDialog(c, "Please enter first integer number : "));
+		int number2 = Integer.parseInt(JOptionPane.showInputDialog(c, "Please enter second integer number : "));
 		
 		if (number2 == 0){
 			JOptionPane.showMessageDialog(null, "Can't divide by zero");
