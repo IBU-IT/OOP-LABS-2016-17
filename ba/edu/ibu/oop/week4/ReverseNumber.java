@@ -12,19 +12,24 @@ import java.util.Scanner;
  */
 public class ReverseNumber {
 	public static void main(String[] args) {
-		int number, enteredNumber, reverse = 0;
+		int number;
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Enter the number to be reversed: ");
 		number = scanner.nextInt();
-		enteredNumber = number;
 
+		System.out.println("Reverse of " + number + " is " + reverse(number));
+		scanner.close();
+	}
+	
+	public static String reverse(int number){
+		StringBuilder b = new StringBuilder();
+		
 		while (number != 0) {
-			reverse = reverse * 10;
-			reverse = reverse + number % 10;
+			b.append(number % 10);
 			number = number / 10;
 		}
-		System.out.println("Reverse of " + enteredNumber + " is " + reverse);
-		scanner.close();
+		
+		return b.toString();
 	}
 }

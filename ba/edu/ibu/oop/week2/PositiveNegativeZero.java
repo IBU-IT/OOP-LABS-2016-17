@@ -14,7 +14,7 @@ public class PositiveNegativeZero {
 		}
 		System.out.println("Number\t Zero\t Positive\t Negative");
 		for(int i=0;i<numbers.length;i++){
-			System.out.println("  "+numbers[i]+"\t  "+(numbers[i]==0?"+":"-")+"\t   2  "+(numbers[i]>0?"+":"-")+"\t             "+(numbers[i]<0?"+":"-"));
+			System.out.println("  "+numbers[i]+"\t  "+(numbers[i]==0?"+":"-")+"\t     "+(numbers[i]>0?"+":"-")+"\t             "+(numbers[i]<0?"+":"-"));
 		}
 		sc.close();
 	}
